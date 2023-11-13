@@ -1,0 +1,24 @@
+format = """
+$directory\
+$git_branch\
+$custom\
+$time\
+$line_break\
+$character"""
+
+[directory]
+style = "bold blue"
+truncation_length = 1
+
+[git_branch]
+symbol = "ᛦ "
+style = "bold purple"
+truncation_length = 30
+format = '[$symbol$branch]($style) '
+
+[time]
+disabled = false
+time_format = "%T"
+utc_time_offset = "+2"
+style = "bold purple"
+format = '[🕛 $symbol$time]($style) '
