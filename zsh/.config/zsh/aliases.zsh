@@ -4,14 +4,13 @@ alias vim='nvim'
 # git
 alias gs='git status'
 alias g-='git switch -'
-alias gw='git switch'
-alias ga='git commit --amend'
-alias gc='git switch -c'
-alias gm='git switch master'
+alias gsw='git switch'
+alias gamend='git commit --amend'
+alias gnb='git switch -c'
+alias gm='git switch main'
 
 # directories
 alias home='cd $HOME'
-alias dev='cd $HOME/development'
 alias repos='cd $HOME/repos'
 alias config='cd $HOME/.config'
 alias dotfiles='cd $HOME/.dotfiles'
