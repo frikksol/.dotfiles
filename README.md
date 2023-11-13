@@ -1,10 +1,10 @@
 # Frikks dotfiles
 ## How to use
 
-1. Install GNU Stow with ´brew install stow´
+1. Install GNU Stow with `brew install stow`
 1. Clone the repo to your home folder
 1. Enter repo
-1. Apply configuration by running ´stow */´ or ´stow hyper´ for a specific package
+1. Apply configuration by running `stow */` or `stow hyper` for a specific package
 
 ## Applications (WIP - should be turned to an install script)
 zsh
