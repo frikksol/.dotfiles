@@ -25,3 +25,6 @@ export PATH="/usr/local/opt/libpq/bin:$PATH"
 
 # zoxide
 eval "$(zoxide init zsh)"
+
+# vim mode
+bindkey -v
