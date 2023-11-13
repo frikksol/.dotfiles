@@ -13,9 +13,15 @@ plug "zsh-users/zsh-autosuggestions"
 plug "zap-zsh/supercharge"
 plug "zsh-users/zsh-syntax-highlighting"
 
-# Load and initialise completion system
+# load and initialise completion system
 autoload -Uz compinit
 compinit
 
 # Fig post block. Keep at the bottom of this file.
 export PATH="/usr/local/opt/libpq/bin:$PATH"
+
+# fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# zoxide
+eval "$(zoxide init zsh)"

@@ -10,9 +10,30 @@ alias gc='git switch -c'
 alias gm='git switch master'
 
 # directories
-alias home='cd /Users/frikk/'
-alias dev='cd /Users/frikk/development'
-alias repos='cd /Users/frikk/repos'
+alias home='cd $HOME'
+alias dev='cd $HOME/development'
+alias repos='cd $HOME/repos'
+alias config='cd $HOME/.config'
+alias dotfiles='cd $HOME/.dotfiles'
 
 # navigation
-alias l='ls -lah'
+alias l='exa -la --git'
+alias tree='exa -T'
+alias cd='z'
+alias cdd='z -'
+
+# files
+alias cat='bat'
+alias rgg='rg -S -L -p -uuu'
+alias zv='vim $(fzf)'
+alias zd='cd $(find * -type d | fzf)'
+
+# configuration
+alias c-zsh='vim $HOME/.zshrc'
+alias c-aliases='vim $HOME/.config/zsh/aliases.zsh'
+alias c-exports='vim $HOME/.config/zsh/exports.zsh'
+alias c-starship='vim $HOME/.config/starship.toml'
+alias c-vim='vim $HOME/.config/nvim/init.lua'
+
+# actions
+alias rcsource='source $HOME/.zshrc'
