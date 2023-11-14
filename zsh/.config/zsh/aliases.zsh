@@ -36,3 +36,7 @@ alias c-vim='vim $HOME/.config/nvim/init.lua'
 
 # actions
 alias rcsource='source $HOME/.zshrc'
+
+# applications
+alias python='python3'
+alias pip='pip3'
