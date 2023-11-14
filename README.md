@@ -6,6 +6,9 @@
 1. Enter repo
 1. Apply configuration by running `stow */` or `stow hyper` for a specific package
 
+## Overview
+You can find an overview over the aliases in use in `./zsh/.config/zsh/aliases.zsh``
+
 ## Applications (WIP - should be turned to an install script)
 zsh
 zap (zsh package manager) zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh) --branch release-v1 
