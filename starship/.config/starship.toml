@@ -1,8 +1,11 @@
 format = """
 $directory\
 $git_branch\
+$git_status\
+$git_state\
 $custom\
-$time\
+$aws\
+$cmd_duration\
 $line_break\
 $character"""
 
@@ -11,14 +14,24 @@ style = "bold blue"
 truncation_length = 1
 
 [git_branch]
-symbol = "ᛦ "
+symbol = " "
 style = "bold purple"
 truncation_length = 30
 format = '[$symbol$branch]($style) '
+
+[aws]
+format = '[$symbol($profile )(\[$duration\] )]($style)'
+symbol = '󰅟  '
+style = "bold yellow"
+force_display = false
 
 [time]
 disabled = false
 time_format = "%T"
 utc_time_offset = "+2"
 style = "bold purple"
-format = '[🕛 $symbol$time]($style) '
+format = '[  $symbol$time]($style) '
+
+[cmd_duration]
+format = '[  $duration]($style) '
+style = 'bold green'
