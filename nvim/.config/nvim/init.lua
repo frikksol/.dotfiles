@@ -4,6 +4,7 @@
 ========================= Frikk Nvim Config =========================
 ========================= Based on kickstart ========================
 =====================================================================
+]]
 
 -- Set <space> as the leader key
 -- See `:help mapleader`
@@ -480,6 +481,9 @@ cmp.setup {
     { name = 'luasnip' },
   },
 }
+
+-- set keymap for Oil file explorer
+vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 
 -- Set theme
 vim.cmd.colorscheme "catppuccin-mocha"
