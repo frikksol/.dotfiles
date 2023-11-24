@@ -44,10 +44,6 @@ P.S. You can delete this when you're done too. It's your config now :)
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
--- disable netrw at the very start of your init.lua for nvim-tree
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
-
 -- [[ Install `lazy.nvim` plugin manager ]]
 --    https://github.com/folke/lazy.nvim
 --    `:help lazy.nvim.txt` for more info
@@ -165,10 +161,10 @@ require('lazy').setup({
     -- See `:help lualine.txt`
     opts = {
       options = {
-        icons_enabled = false,
-        theme = 'onedark',
-        component_separators = '|',
-        section_separators = '',
+        icons_enabled = true,
+        theme = 'nightfly',
+        component_separators = { right = '', left = '' },
+        section_separators = { right ='', left='' },
       },
     },
   },
@@ -227,18 +223,6 @@ require('lazy').setup({
   --    Uncomment the following line and add your plugins to `lua/custom/plugins/*.lua` to get going.
   --
   --    For additional information see: https://github.com/folke/lazy.nvim#-structuring-your-plugins
-  -- { import = 'custom.plugins' },
-  {
-    "nvim-tree/nvim-tree.lua",
-    version = "*",
-    lazy = false,
-    dependencies = {
-      "nvim-tree/nvim-web-devicons",
-    },
-    config = function()
-      require("nvim-tree").setup {}
-    end,
-  },
 }, {})
 
 -- [[ Setting options ]]
@@ -399,8 +383,8 @@ vim.defer_fn(function()
       keymaps = {
         init_selection = '<c-space>',
         node_incremental = '<c-space>',
-        scope_incremental = '<c-s>',
-        node_decremental = '<M-space>',
+        --scope_incremental = '<c-s>',
+        node_decremental = '<c-s>',
       },
     },
     textobjects = {
@@ -610,11 +594,6 @@ cmp.setup {
     { name = 'luasnip' },
   },
 }
-
-
--- empty setup using defaults
-require("nvim-tree").setup()
-
 
 -- Set theme
 vim.cmd.colorscheme "catppuccin-mocha"
