@@ -1,3 +1,4 @@
+-- Used to create matching brackets
 
 return {
   "windwp/nvim-autopairs",
