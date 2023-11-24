@@ -155,19 +155,6 @@ require('lazy').setup({
 
   { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
 
-  {
-    -- Set lualine as statusline
-    'nvim-lualine/lualine.nvim',
-    -- See `:help lualine.txt`
-    opts = {
-      options = {
-        icons_enabled = true,
-        theme = 'nightfly',
-        component_separators = { right = '', left = '' },
-        section_separators = { right ='', left='' },
-      },
-    },
-  },
 
   {
     -- Add indentation guides even on blank lines
