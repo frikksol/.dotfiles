@@ -5,6 +5,9 @@ return {
   -- Detect tabstop and shiftwidth automatically
   'tpope/vim-sleuth',
 
+  -- Quickly add or change surrounds, quotes, tags, brackets etc.
+  'tpope/vim-surround',
+
   -- "gc" to comment visual regions/lines
   { 'numToStr/Comment.nvim', opts = {} },
 
