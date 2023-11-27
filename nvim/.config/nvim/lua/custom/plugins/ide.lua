@@ -1,5 +1,5 @@
 
--- Basic plugins like treesitter, lsp, telescope, cmp etc.
+-- IDE-style plugins like treesitter, lsp, telescope, cmp etc.
 
 return {
   -- NOTE: This is where your plugins related to LSP can be installed.

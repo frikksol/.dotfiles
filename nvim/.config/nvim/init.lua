@@ -15,7 +15,7 @@ vim.g.maplocalleader = ' '
 require('lazy-setup')
 require('highlight-on-yank-setup')
 require('telescope-setup')
-require('treesitter-setup')
+require('lsp-setup')
 require('cmp-setup')
 -- Set options
 require('options')
