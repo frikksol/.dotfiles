@@ -19,6 +19,11 @@ vim.o.clipboard = 'unnamedplus'
 -- Enable break indent
 vim.o.breakindent = true
 
+-- Set tabstop. vim-sleuth handles this automatically, but may struggle on empty files
+vim.opt.tabstop = 8 -- Always 8 (see :h tabstop)
+vim.opt.softtabstop = 2 -- What you expecting
+vim.opt.shiftwidth = 2 -- What you expecting
+
 -- Save undo history
 vim.o.undofile = true
 
