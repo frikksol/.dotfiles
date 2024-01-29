@@ -9,3 +9,6 @@ export EDITOR="/opt/homebrew/bin/nvim"
 # starship
 eval "$(starship init zsh)"
 
+# sdk-man
+source "/Users/frikkherdingsolberg/.sdkman/bin/sdkman-init.sh"
+

@@ -34,6 +34,8 @@ alias c-exports='vim $HOME/.config/zsh/exports.zsh'
 alias c-starship='vim $HOME/.config/starship.toml'
 alias c-vim='vim $HOME/.config/nvim/init.lua'
 alias c-hyper='vim $HOME/.hyper.js'
+alias c-zellij='vim $HOME/.config/zellij/config.kdl'
+alias c-kitty='vim $HOME/.config/kitty/kitty.conf'
 
 # actions
 alias rcsource='source $HOME/.zshrc'
@@ -41,3 +43,10 @@ alias rcsource='source $HOME/.zshrc'
 # applications
 alias python='python3'
 alias pip='pip3'
+
+# hafslund
+alias hr='cd $HOME/hafslund'
+alias hz='zellij attach hflex'
+alias hzz='zellij --session hflex --layout $HOME/.config/zellij/hflex-layout.kdl'
+alias gbld='./gradlew build'
+alias grun='./gradlew run'
