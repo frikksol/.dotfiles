@@ -3,3 +3,5 @@
 	email = frikksol@gmail.com
 [pull]
 	ff = only
+[core]
+	autocrlf = input
