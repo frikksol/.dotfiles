@@ -12,10 +12,15 @@ layout {
         pane name="general"
     }
     tab name="2 common" cwd="$HOME/hafslund" {
-        pane split_direction="Vertical" {
-            pane cwd="./asset-catalog" name="asset-catalog"
-            pane cwd="./availability-governor" name="availability-governor"
-            pane cwd="./availability-ingestor" name="availability-ingestor"
+        pane split_direction="Horizontal" {
+            pane split_direction="Vertical" {
+                pane cwd="./asset-catalog" name="asset-catalog"
+                pane cwd="./asset-activator" name="asset-activator"
+            }
+            pane split_direction="Vertical" {
+                pane cwd="./availability-governor" name="availability-governor"
+                pane cwd="./availability-ingestor" name="availability-ingestor"
+            }
         }
     }
     tab name="3 nodes" cwd="$HOME/hafslund" {
@@ -33,7 +38,7 @@ layout {
             }
             pane split_direction="Vertical" {
                 pane cwd="./integration-test" name="int-test"
-                pane cwd="./decision-log" name="decicion-log"
+                pane cwd="./decision-log" name="decision-log"
             }
         }
     }
