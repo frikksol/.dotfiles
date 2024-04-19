@@ -3,6 +3,7 @@
 
 # source
 plug "$HOME/.config/zsh/aliases.zsh"
+plug "$HOME/.config/zsh/hflex-aliases.zsh"
 plug "$HOME/.config/zsh/exports.zsh"
 
 # plugins

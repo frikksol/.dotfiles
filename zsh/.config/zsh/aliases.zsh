@@ -1,4 +1,4 @@
-# Neovim
+# Neovim 
 alias vim='nvim'
 
 # git
@@ -8,6 +8,7 @@ alias gsw='git switch'
 alias gamend='git commit --amend'
 alias gnb='git switch -c'
 alias gm='git switch main'
+alias gd='git diff'
 
 # directories
 alias home='cd $HOME'
@@ -16,8 +17,9 @@ alias config='cd $HOME/.config'
 alias dotfiles='cd $HOME/.dotfiles'
 
 # navigation
-alias l='exa -la --git'
-alias tree='exa -T'
+alias ls='eza --long'
+alias l='eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions -A'
+alias tree='eza --tree'
 alias cd='z'
 alias cdd='z -'
 
@@ -44,10 +46,3 @@ alias rcsource='source $HOME/.zshrc'
 alias python='python3'
 alias pip='pip3'
 
-# hafslund
-alias hr='cd $HOME/hafslund'
-alias hz='zellij attach hflex'
-alias hzz='zellij --session hflex --layout $HOME/.config/zellij/hflex-layout.kdl'
-alias gbld='./gradlew build'
-alias grun='./gradlew run'
-alias gclean='./gradlew clean'
