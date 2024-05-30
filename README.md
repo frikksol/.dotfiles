@@ -1,6 +1,9 @@
 # Frikks dotfiles
 ## How to use
 
+1. Install git
+1. Install Homebrew
+1. Run install.sh
 1. Install GNU Stow with `brew install stow`
 1. Clone the repo to your home folder
 1. Enter repo
