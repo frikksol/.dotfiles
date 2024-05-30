@@ -24,7 +24,9 @@ alias cd='z'
 alias cdd='z -'
 
 # files
+alias c='bat'
 alias cat='bat'
+alias catp='cat -p'
 alias rgg='rg -S -L -p -uuu'
 alias zv='vim $(fzf)'
 alias zd='cd $(find * -type d | fzf)'

@@ -15,9 +15,6 @@ plug "zsh-users/zsh-syntax-highlighting"
 autoload -Uz compinit
 compinit
 
-# Fig post block. Keep at the bottom of this file.
-export PATH="/usr/local/opt/libpq/bin:$PATH"
-
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
