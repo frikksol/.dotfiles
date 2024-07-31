@@ -34,7 +34,7 @@ alias zd='cd $(find * -type d | fzf)'
 # configuration
 alias c-zsh='vim $HOME/.zshrc'
 alias c-aliases='vim $HOME/.config/zsh/aliases.zsh'
-alias c-exports='vim $HOME/.config/zsh/exports.zsh'
+alias c-options='vim $HOME/.config/zsh/options.zsh'
 alias c-starship='vim $HOME/.config/starship.toml'
 alias c-vim='vim $HOME/.config/nvim/init.lua'
 alias c-hyper='vim $HOME/.hyper.js'
