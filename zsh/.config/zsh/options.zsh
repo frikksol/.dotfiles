@@ -17,7 +17,6 @@ export EDITOR="/opt/homebrew/bin/nvim"
 # xref: https://github.com/starship/starship/issues/3418
 type starship_zle-keymap-select >/dev/null || \
 {
-  echo "Load starship"
   eval "$(starship init zsh)"
 }
 
@@ -31,8 +30,8 @@ autoload -Uz compinit && compinit
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':completion:*' menu no
-zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza -1 --color=always $realpath'
-zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
+zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'eza --color $realpath'
+zstyle ':fzf-tab:complete:*' fzf-preview 'eza $realpath'
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
