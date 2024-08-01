@@ -40,6 +40,7 @@ alias c-vim='vim $HOME/.config/nvim/init.lua'
 alias c-hyper='vim $HOME/.hyper.js'
 alias c-zellij='vim $HOME/.config/zellij/config.kdl'
 alias c-kitty='vim $HOME/.config/kitty/kitty.conf'
+alias c-wezterm='vim $HOME/.config/wezterm/wezterm.lua'
 
 # actions
 alias rcsource='source $HOME/.zshrc'

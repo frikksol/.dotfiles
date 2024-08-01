@@ -3,7 +3,7 @@
 echo "Installing packages..."
 
 # Terminal Tools
-brew install zsh starship exa bat ripgrep fzf zoxide kitty zellij 1password-cli eza htop mdcat neovim stow the_silver_searcher tree wget
+brew install zsh starship exa bat ripgrep fzf zoxide kitty zellij 1password-cli eza htop mdcat neovim stow the_silver_searcher tree wget wezterm
 
 # GUI Applications
 brew install firefox alfred alt-tab amethyst bruno dozer linearmouse spotify vlc
