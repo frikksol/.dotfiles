@@ -30,6 +30,7 @@ alias catp='cat -p'
 alias rgg='rg -S -L -p -uuu'
 alias zv='vim $(fzf)'
 alias zd='cd $(find * -type d | fzf)'
+alias o='open'
 
 # configuration
 alias c-zsh='vim $HOME/.zshrc'
@@ -41,6 +42,7 @@ alias c-hyper='vim $HOME/.hyper.js'
 alias c-zellij='vim $HOME/.config/zellij/config.kdl'
 alias c-kitty='vim $HOME/.config/kitty/kitty.conf'
 alias c-wezterm='vim $HOME/.config/wezterm/wezterm.lua'
+alias c-aerospace='vim $HOME/.config/aerospace/aerospace.toml'
 
 # actions
 alias rcsource='source $HOME/.zshrc'
