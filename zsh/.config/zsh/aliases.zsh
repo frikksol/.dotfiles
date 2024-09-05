@@ -18,7 +18,7 @@ alias dotfiles='cd $HOME/.dotfiles'
 
 # navigation
 alias ls='eza --long'
-alias l='eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions -A'
+alias l='eza --color=always --long --git --icons=always --no-time --no-user --no-permissions -A'
 alias tree='eza --tree'
 alias cd='z'
 alias cdd='z -'
