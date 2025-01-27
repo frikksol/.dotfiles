@@ -19,6 +19,8 @@ brew install \
   the_silver_searcher \ # Searching, simpler that ripgrep, but super useful
   tree \ # List folder tree structure, not installed by default on macs for some reason
   wget \ 
+  lazygit \ # git TUI
+  lazydocker \ # Docker TUI
   wezterm # Awesome terminal emulator
 
 # GUI Applications
