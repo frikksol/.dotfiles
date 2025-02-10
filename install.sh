@@ -49,7 +49,7 @@ zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh) 
 # Info
 echo "Remember to run fzf install script. See their installation instructions"
 echo ""
-echo "Applications to install manually: Docker Desktop"
+echo "Applications to install manually: Docker Desktop, IntelliJ, OpenVpn, Ableton"
 echo "Applications to install with npm -g: aws-cdk, aws-cdk-local, vercel"
 echo ""
 echo "Done!"
