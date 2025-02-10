@@ -1,0 +1,53 @@
+{
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.9.5",
+  "schemes" : [
+    {
+      "pointer" : {
+        "disableAcceleration" : false
+      },
+      "if" : {
+        "device" : {
+          "serialNumber" : "B559DD04",
+          "vendorID" : "0x46d",
+          "category" : "mouse",
+          "productName" : "MX Master 3S B",
+          "productID" : "0xb035"
+        }
+      }
+    },
+    {
+      "pointer" : {
+        "disableAcceleration" : true,
+        "speed" : 0.2036,
+        "acceleration" : 1
+      },
+      "if" : {
+        "device" : {
+          "category" : "mouse",
+          "productID" : "0x7b",
+          "vendorID" : "0x1532",
+          "productName" : "Razer Viper Ultimate Dongle"
+        }
+      }
+    },
+    {
+      "scrolling" : {
+        "speed" : {
+          "vertical" : 0
+        }
+      },
+      "pointer" : {
+        "speed" : 0.0545
+      },
+      "if" : {
+        "device" : {
+          "category" : "mouse",
+          "serialNumber" : "B1567C87",
+          "vendorID" : "0x46d",
+          "productID" : "0xb034",
+          "productName" : "MX Master 3S"
+        }
+      }
+    }
+  ]
+}
