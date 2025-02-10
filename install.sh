@@ -25,13 +25,13 @@ brew install \
 
 # GUI Applications
 brew install \
-  firefox \ # I actually use zen-browser, but its not in brew yet
-  raycast \ # App launcher
+  zen-browser@twilight \ # Browser. Twilight is with experimental features
+  raycast \ # App launcer
   alt-tab \ # Enable alt-tab on mac
   bruno \ # Postman replacement
   dozer \ # Group things in the status bar
   linearmouse \ # Makes mouse linear on mac
-  spotify \
+  spotify \ # Music
   aerospace \ # Tiling window manager on mac
   darktable \ # Photo editing
   figma \
@@ -46,4 +46,9 @@ zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh) 
 
 # Info
 echo "Remember to run fzf install script. See their installation instructions"
+echo ""
+echo "Applications to install manually: Docker Desktop"
+echo "Applications to install with npm -g: aws-cdk, aws-cdk-local, vercel"
+echo ""
+echo "Done!"
 
