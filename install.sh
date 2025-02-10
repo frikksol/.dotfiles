@@ -4,39 +4,40 @@ echo "Installing packages..."
 
 # Terminal Tools
 brew install \ 
-  zsh \ 
-  starship \ # Terminal prompt
   bat \ # Improved cat
-  ripgrep \ # Searching
-  fzf \ # Fuzzy finding for everything
-  zoxide \ # Improved cd
-  1password-cli \ # CLI for 1Password
   eza \ # Improved ls
+  fzf \ # Fuzzy finding for everything
+  git \ 
   htop \ # List process info
+  lazygit \ # git TUI
+  lazydocker \ # Docker TUI
   mdcat \ # Markdown Reader
   neovim \ # Vim replacement
+  ripgrep \ # Searching
+  starship \ # Terminal prompt
   stow \ # Dotfile management
   the_silver_searcher \ # Searching, simpler that ripgrep, but super useful
   tree \ # List folder tree structure, not installed by default on macs for some reason
   wget \ 
-  lazygit \ # git TUI
-  lazydocker \ # Docker TUI
   wezterm # Awesome terminal emulator
+  zoxide \ # Improved cd
+  zsh \ 
+  1password-cli \ # CLI for 1Password
 
 # GUI Applications
-brew install \
-  zen-browser@twilight \ # Browser. Twilight is with experimental features
-  raycast \ # App launcer
+brew install \ 
+  aerospace \ # Tiling window manager on mac
   alt-tab \ # Enable alt-tab on mac
   bruno \ # Postman replacement
-  dozer \ # Group things in the status bar
-  linearmouse \ # Makes mouse linear on mac
-  spotify \ # Music
-  aerospace \ # Tiling window manager on mac
   darktable \ # Photo editing
-  figma \
+  dozer \ # Group things in the status bar
+  figma \ 
+  linearmouse \ # Makes mouse linear on mac
+  raycast \ # App launcer
+  spotify \ # Music
   ticktick \ # Todo
   vlc
+  zen-browser@twilight \ # Browser. Twilight is with experimental features
 
 # Fonts
 brew install font-fira-mono-nerd-font font-hack-nerd-font font-jetbrains-mono-nerd-font
