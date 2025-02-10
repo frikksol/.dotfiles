@@ -33,6 +33,7 @@ brew install \
   dozer \ # Group things in the status bar
   figma \ 
   linearmouse \ # Makes mouse linear on mac
+  notion \ 
   raycast \ # App launcer
   spotify \ # Music
   ticktick \ # Todo
