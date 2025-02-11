@@ -1,0 +1,10 @@
+Plug 'easymotion/vim-easymotion'
+let mapleader = ","
+nmap <space> <Leader>
+set easymotion
+set relativenumber
+set which-key
+set multicursor
+set timeoutlen=15000
+
+map <Leader> <Plug>(easymotion-prefix)
