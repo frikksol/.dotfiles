@@ -20,9 +20,6 @@ type starship_zle-keymap-select >/dev/null || \
   eval "$(starship init zsh)"
 }
 
-# sdk-man
-source "/Users/frikkherdingsolberg/.sdkman/bin/sdkman-init.sh"
-
 # load and initialise completion system
 autoload -Uz compinit && compinit
 
@@ -42,6 +39,3 @@ eval "$(zoxide init zsh)"
 # Add idea to path
 export PATH="/Applications/IntelliJ IDEA.app/Contents/MacOS:$PATH"
 
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
