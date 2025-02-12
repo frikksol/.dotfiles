@@ -31,7 +31,7 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'eza --color $realpath'
 zstyle ':fzf-tab:complete:*' fzf-preview 'eza $realpath'
 
 # fzf
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source <(fzf --zsh)
 
 # zoxide
 eval "$(zoxide init zsh)"

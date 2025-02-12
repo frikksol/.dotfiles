@@ -9,9 +9,10 @@ echo "Installing packages..."
 brew install bat eza fzf git htop lazygit lazydocker mdcat neovim ripgrep starship stow the_silver_searcher tree wget wezterm zoxide zsh 1password-cli zellij git-delta
 
 # GUI Applications
-# dozer is discontinued...
 brew install --cask nikitabobko/tap/aerospace
-brew install alt-tab bruno darktable figma slack intellij-idea linearmouse notion raycast spotify ticktick vlc zen-browser@twilight
+brew install caffeine alt-tab linearmouse raycast
+brew install bruno figma slack intellij-idea notion 
+brew install darktable spotify ticktick vlc zen-browser@twilight
 
 # Fonts
 brew install font-fira-mono-nerd-font font-hack-nerd-font font-jetbrains-mono-nerd-font font-jetbrains-mono
