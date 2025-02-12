@@ -1,5 +1,4 @@
 {
-  "$schema" : "https:\/\/schema.linearmouse.app\/0.9.5",
   "schemes" : [
     {
       "pointer" : {
@@ -7,47 +6,53 @@
       },
       "if" : {
         "device" : {
-          "serialNumber" : "B559DD04",
           "vendorID" : "0x46d",
+          "serialNumber" : "B559DD04",
           "category" : "mouse",
-          "productName" : "MX Master 3S B",
-          "productID" : "0xb035"
-        }
-      }
-    },
-    {
-      "pointer" : {
-        "disableAcceleration" : true,
-        "speed" : 0.2036,
-        "acceleration" : 1
-      },
-      "if" : {
-        "device" : {
-          "category" : "mouse",
-          "productID" : "0x7b",
-          "vendorID" : "0x1532",
-          "productName" : "Razer Viper Ultimate Dongle"
+          "productID" : "0xb035",
+          "productName" : "MX Master 3S B"
         }
       }
     },
     {
       "scrolling" : {
-        "speed" : {
-          "vertical" : 0
+        "acceleration" : {
+          "vertical" : 1
+        }
+      },
+      "pointer" : {
+        "speed" : 0.2036,
+        "acceleration" : 1,
+        "disableAcceleration" : true
+      },
+      "if" : {
+        "device" : {
+          "productID" : "0x7b",
+          "productName" : "Razer Viper Ultimate Dongle",
+          "category" : "mouse",
+          "vendorID" : "0x1532"
+        }
+      }
+    },
+    {
+      "if" : {
+        "device" : {
+          "serialNumber" : "B1567C87",
+          "productName" : "MX Master 3S",
+          "productID" : "0xb034",
+          "vendorID" : "0x46d",
+          "category" : "mouse"
         }
       },
       "pointer" : {
         "speed" : 0.0545
       },
-      "if" : {
-        "device" : {
-          "category" : "mouse",
-          "serialNumber" : "B1567C87",
-          "vendorID" : "0x46d",
-          "productID" : "0xb034",
-          "productName" : "MX Master 3S"
+      "scrolling" : {
+        "speed" : {
+          "vertical" : 0
         }
       }
     }
-  ]
+  ],
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.10.0"
 }

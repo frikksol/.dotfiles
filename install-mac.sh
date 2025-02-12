@@ -10,7 +10,8 @@ brew install bat eza fzf git htop lazygit lazydocker mdcat neovim ripgrep starsh
 
 # GUI Applications
 brew install --cask nikitabobko/tap/aerospace ghostty
-brew install caffeine alt-tab linearmouse raycast
+brew install caffeine alt-tab linearmouse raycast vanilla
+
 brew install bruno figma slack intellij-idea notion 
 brew install darktable spotify vlc zen-browser@twilight
 
