@@ -42,6 +42,7 @@ alias c-hyper='vim $HOME/.hyper.js'
 alias c-zellij='vim $HOME/.config/zellij/config.kdl'
 alias c-kitty='vim $HOME/.config/kitty/kitty.conf'
 alias c-wezterm='vim $HOME/.config/wezterm/wezterm.lua'
+alias c-ghostty='vim $HOME/.config/ghostty/config'
 alias c-aerospace='vim $HOME/.config/aerospace/aerospace.toml'
 
 # actions
