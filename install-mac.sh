@@ -6,13 +6,13 @@ echo "Installing packages..."
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # Terminal Tools
-brew install bat eza fzf git htop lazygit lazydocker mdcat neovim ripgrep starship stow the_silver_searcher tree wget wezterm zoxide zsh 1password-cli zellij git-delta
+brew install bat eza fzf git htop lazygit lazydocker mdcat neovim ripgrep starship stow the_silver_searcher tree wget zoxide zsh 1password-cli zellij git-delta
 
 # GUI Applications
-brew install --cask nikitabobko/tap/aerospace
+brew install --cask nikitabobko/tap/aerospace ghostty
 brew install caffeine alt-tab linearmouse raycast
 brew install bruno figma slack intellij-idea notion 
-brew install darktable spotify ticktick vlc zen-browser@twilight
+brew install darktable spotify vlc zen-browser@twilight
 
 # Fonts
 brew install font-fira-mono-nerd-font font-hack-nerd-font font-jetbrains-mono-nerd-font font-jetbrains-mono
