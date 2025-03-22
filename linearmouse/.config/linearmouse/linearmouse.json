@@ -1,47 +1,48 @@
 {
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.10.0",
   "schemes" : [
     {
-      "pointer" : {
-        "disableAcceleration" : false
-      },
       "if" : {
         "device" : {
-          "vendorID" : "0x46d",
-          "serialNumber" : "B559DD04",
-          "category" : "mouse",
           "productID" : "0xb035",
-          "productName" : "MX Master 3S B"
+          "productName" : "MX Master 3S B",
+          "vendorID" : "0x46d",
+          "category" : "mouse",
+          "serialNumber" : "B559DD04"
         }
+      },
+      "pointer" : {
+        "disableAcceleration" : false
       }
     },
     {
+      "pointer" : {
+        "disableAcceleration" : true,
+        "speed" : 0.2036,
+        "acceleration" : 1
+      },
+      "if" : {
+        "device" : {
+          "category" : "mouse",
+          "productName" : "Razer Viper Ultimate Dongle",
+          "vendorID" : "0x1532",
+          "productID" : "0x7b"
+        }
+      },
       "scrolling" : {
         "acceleration" : {
           "vertical" : 1
         }
-      },
-      "pointer" : {
-        "speed" : 0.2036,
-        "acceleration" : 1,
-        "disableAcceleration" : true
-      },
-      "if" : {
-        "device" : {
-          "productID" : "0x7b",
-          "productName" : "Razer Viper Ultimate Dongle",
-          "category" : "mouse",
-          "vendorID" : "0x1532"
-        }
       }
     },
     {
       "if" : {
         "device" : {
-          "serialNumber" : "B1567C87",
+          "category" : "mouse",
           "productName" : "MX Master 3S",
           "productID" : "0xb034",
           "vendorID" : "0x46d",
-          "category" : "mouse"
+          "serialNumber" : "B1567C87"
         }
       },
       "pointer" : {
@@ -52,7 +53,21 @@
           "vertical" : 0
         }
       }
+    },
+    {
+      "scrolling" : {
+        "acceleration" : {
+          "vertical" : 1
+        }
+      },
+      "if" : {
+        "device" : {
+          "productID" : "0xc1",
+          "productName" : "Razer Viper V3 Pro",
+          "category" : "mouse",
+          "vendorID" : "0x1532"
+        }
+      }
     }
-  ],
-  "$schema" : "https:\/\/schema.linearmouse.app\/0.10.0"
+  ]
 }
