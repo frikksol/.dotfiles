@@ -349,7 +349,7 @@ require('lazy').setup({
       -- Document existing key chains
       spec = {
         { '<leader>s', group = '[S]earch' },
-        { '<leader>t', group = '[T]oggle' },
+        { '<leader>t', group = '[T]oggle and [T]est' },
         { '<leader>h', group = 'Git [H]unk', mode = { 'n', 'v' } },
       },
     },
@@ -968,6 +968,37 @@ require('lazy').setup({
     --    - Incremental selection: Included, see `:help nvim-treesitter-incremental-selection-mod`
     --    - Show your current context: https://github.com/nvim-treesitter/nvim-treesitter-context
     --    - Treesitter + textobjects: https://github.com/nvim-treesitter/nvim-treesitter-textobjects
+  },
+  {
+    'nvim-neotest/neotest',
+    dependencies = {
+      'nvim-neotest/nvim-nio',
+      'nvim-lua/plenary.nvim',
+      'antoinemadec/FixCursorHold.nvim',
+      'nvim-treesitter/nvim-treesitter',
+      'nvim-neotest/neotest-go',
+    },
+    opts = {},
+    config = function()
+      require('neotest').setup {
+        adapters = {
+          require 'neotest-go',
+        },
+        output_panel = {
+          enabled = true,
+          open = 'botright split | resize 15',
+        },
+        quickfix = {
+          open = false,
+        },
+      }
+
+      vim.keymap.set('n', '<leader>tt', "<cmd>lua require('neotest').run.run()<CR>", { desc = 'Run [T]est' })
+      vim.keymap.set('n', '<leader>tf', "<cmd>lua require('neotest').run.run(vim.fn.expand('%'))<CR>", { desc = 'Run Test [F]ile' })
+      vim.keymap.set('n', '<leader>tp', "<cmd>lua require('neotest').output_panel.toggle()<CR>", { desc = 'Toggle Test [P]anel' })
+      vim.keymap.set('n', '<leader>tl', "<cmd>lua require('neotest').run.run_last()<CR>", { desc = 'Run [L]ast test' })
+      vim.keymap.set('n', '<leader>ts', "<cmd>lua require('neotest').summary.toggle()<CR>", { desc = 'Toggle Test [S]ummary' })
+    end,
   },
 
   -- The following comments only work if you have downloaded the kickstart repo, not just copy pasted the
