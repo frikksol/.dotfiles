@@ -9,6 +9,7 @@ alias gamend='git commit --amend'
 alias gnb='git switch -c'
 alias gm='git switch main'
 alias gd='git diff'
+alias lg='lazygit'
 
 # directories
 alias home='cd $HOME'
