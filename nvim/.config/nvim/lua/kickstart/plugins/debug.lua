@@ -28,7 +28,7 @@ return {
   keys = {
     -- Basic debugging keymaps, feel free to change to your liking!
     {
-      '<leader>bc',
+      '<leader>b<leader>',
       function()
         require('dap').continue()
       end,
