@@ -353,6 +353,12 @@ require('lazy').setup({
         { '<leader>g', group = 'To[g]gle' },
         { '<leader>h', group = 'Git [H]unk', mode = { 'n', 'v' } },
         { '<leader>b', group = 'De[b]ug' },
+        { 'g', group = '[G]o' },
+        { 'gr', group = 'Go LSP actions' },
+        { 'z', group = 'Folding' },
+        { 's', group = 'Surround' },
+        { '[', group = 'Prev' },
+        { ']', group = 'Next' },
       },
     },
   },
@@ -1006,6 +1012,9 @@ require('lazy').setup({
       vim.keymap.set('n', '<leader>ts', "<cmd>lua require('neotest').summary.toggle()<CR>", { desc = 'Toggle Test [S]ummary' })
     end,
   },
+
+  -- Add shortcut to show all the shortcuts
+  vim.keymap.set('n', '<leader>?', "<cmd>lua require('which-key').show()<CR>", { desc = 'Show Shortcuts' }),
 
   -- The following comments only work if you have downloaded the kickstart repo, not just copy pasted the
   -- init.lua. If you want these files, they are in the repository, so you can just download them and
