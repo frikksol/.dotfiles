@@ -1012,8 +1012,7 @@ require('lazy').setup({
       vim.keymap.set('n', '<leader>ts', "<cmd>lua require('neotest').summary.toggle()<CR>", { desc = 'Toggle Test [S]ummary' })
     end,
   },
-  -- Oil file manager
-  {
+  { -- Oil file manager
     'stevearc/oil.nvim',
     ---@module 'oil'
     ---@type oil.SetupOpts
@@ -1027,9 +1026,8 @@ require('lazy').setup({
       vim.keymap.set('n', '-', '<CMD>Oil<CR>', { desc = 'Open parent directory' }),
     },
   },
+  { -- Harpoon for blazing fast file switching
 
-  -- Harpoon for blazing fast file switching
-  {
     'ThePrimeagen/harpoon',
     branch = 'harpoon2',
     dependencies = { 'nvim-lua/plenary.nvim' },
@@ -1045,16 +1043,9 @@ require('lazy').setup({
         desc = 'Add file to Harpoon',
       },
       {
-        '<leader>h<leader>',
-        function()
-          require('harpoon').ui:toggle_quick_menu(require('harpoon'):list())
-        end,
-        desc = 'Toggle Harpoon Menu',
-      },
-      {
         '<leader>hh',
         function()
-          require('harpoon.ui').ui:toggle_quick_menu()
+          require('harpoon').ui:toggle_quick_menu(require('harpoon'):list())
         end,
         desc = 'Toggle Harpoon Menu',
       },
