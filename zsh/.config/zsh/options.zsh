@@ -39,3 +39,7 @@ eval "$(zoxide init zsh)"
 # Add idea to path
 export PATH="/Applications/IntelliJ IDEA.app/Contents/MacOS:$PATH"
 
+# Add go to path
+export GOPATH="$HOME/go"
+export PATH="$PATH:/usr/local/go/bin:$GOPATH/bin"
+export PATH="$PATH:$GOPATH/bin"
