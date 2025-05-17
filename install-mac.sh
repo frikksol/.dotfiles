@@ -6,14 +6,16 @@ echo "Installing packages..."
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # Terminal Tools
-brew install bat eza fzf git htop lazygit lazydocker mdcat neovim ripgrep starship stow the_silver_searcher tree wget zoxide zsh 1password-cli zellij git-delta
+brew install bat eza fzf git htop zoxide zsh the_silver_searcher tree wget ripgrep
+brew install lazygit lazydocker 
+brew install neovim mdcat starship stow zellij git-delta tmux
+brew install 1password-cli
 
 # GUI Applications
 brew install --cask nikitabobko/tap/aerospace ghostty
 brew install caffeine alt-tab linearmouse raycast vanilla
 
-brew install bruno figma slack intellij-idea notion 
-brew install darktable spotify vlc zen-browser@twilight
+brew install spotify vlc
 
 # Fonts
 brew install font-fira-mono-nerd-font font-hack-nerd-font font-jetbrains-mono-nerd-font font-jetbrains-mono
@@ -25,7 +27,7 @@ zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh) 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 # Set up bat cache
-bat cache --builzz
+bat cache --build
 
 # Info
 echo "Remember to run fzf install script. See their installation instructions"

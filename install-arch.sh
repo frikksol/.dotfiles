@@ -4,13 +4,16 @@ echo "Installing packages..."
 echo "Yay is a prerequisite"
 
 # Terminal Tools
-yay -S bat eza fzf git htop lazygit lazydocker mdcat neovim ripgrep starship stow the_silver_searcher tree wget wezterm zoxide zsh 1password-cli zellij git-delta zsh
+yay -S bat eza fzf git htop zoxide zsh the_silver_searcher tree wget ripgrep
+yay -S lazygit lazydocker 
+yay -S neovim mdcat starship stow zellij git-delta tmux
+yay -S 1password-cli 
 
 # Set zsh as default shell
 chsh -s /usr/bin/zsh
 
 # GUI Applications
-yay -S bruno google-chrome ghostty 
+yay -S google-chrome ghostty 
 yay -S spotify vlc 
 
 # launcher
