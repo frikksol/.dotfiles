@@ -45,6 +45,7 @@ alias c-kitty='vim $HOME/.config/kitty/kitty.conf'
 alias c-wezterm='vim $HOME/.config/wezterm/wezterm.lua'
 alias c-ghostty='vim $HOME/.config/ghostty/config'
 alias c-aerospace='vim $HOME/.config/aerospace/aerospace.toml'
+alias c-tmux='vim $HOME/.config/tmux/tmux.conf'
 
 # actions
 alias rcsource='source $HOME/.zshrc'
