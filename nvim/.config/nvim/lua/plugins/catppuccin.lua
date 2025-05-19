@@ -9,7 +9,6 @@ return { -- Catppuccin theme
       integrations = {
         blink_cmp = true,
         harpoon = true,
-        --lualine
         neotest = true,
         noice = true,
         copilot_vim = true,
