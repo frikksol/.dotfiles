@@ -20,9 +20,6 @@ type starship_zle-keymap-select >/dev/null || \
   eval "$(starship init zsh)"
 }
 
-# load and initialise completion system
-autoload -Uz compinit && compinit
-
 # completion styling
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
@@ -43,3 +40,7 @@ export PATH="/Applications/IntelliJ IDEA.app/Contents/MacOS:$PATH"
 export GOPATH="$HOME/go"
 export PATH="$PATH:/usr/local/go/bin:$GOPATH/bin"
 export PATH="$PATH:$GOPATH/bin"
+
+# load and initialise completion system
+# needs to happend at the end to avoid slow startup
+autoload -Uz compinit && compinit
