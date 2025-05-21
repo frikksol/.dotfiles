@@ -60,6 +60,5 @@ return { -- Useful plugin to show you pending keybinds.
         { 'K', group = 'Function Docs' },
       },
     },
-    { vim.keymap.set('n', '<leader>?', "<cmd>lua require('which-key').show()<CR>", { desc = 'Show Shortcuts' }) },
   },
 }

@@ -139,6 +139,8 @@ end
 local rtp = vim.opt.rtp
 rtp:prepend(lazypath)
 
+vim.keymap.set('n', '<leader>?', "<cmd>lua require('which-key').show()<CR>", { desc = 'Show Shortcuts' })
+
 -- [[ Configure and install plugins ]]
 --
 --  To check the current status of your plugins, run
