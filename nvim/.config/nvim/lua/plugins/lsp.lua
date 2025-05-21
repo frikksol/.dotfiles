@@ -254,6 +254,9 @@ return {
       local ensure_installed = vim.tbl_keys(servers or {})
       vim.list_extend(ensure_installed, {
         'stylua', -- Used to format Lua code
+        'goimports', -- Used to format Go code
+        'rustfmt', -- Used to format Rust code
+        'codespell', -- Used to spell check code
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
@@ -308,6 +311,7 @@ return {
         lua = { 'stylua' },
         go = { 'goimports', 'gofmt' },
         rust = { 'rustfmt', lsp_format = 'fallback' },
+        ['*'] = { 'codespell' },
         -- Conform can also run multiple formatters sequentially
         -- python = { "isort", "black" },
         --
@@ -392,7 +396,7 @@ return {
       completion = {
         -- By default, you may press `<c-space>` to show the documentation.
         -- Optionally, set `auto_show = true` to show the documentation after a delay.
-        documentation = { auto_show = false, auto_show_delay_ms = 500 },
+        documentation = { auto_show = true, auto_show_delay_ms = 500 },
       },
 
       sources = {
