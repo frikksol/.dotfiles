@@ -56,7 +56,6 @@ return { -- Useful plugin to show you pending keybinds.
         { 's', group = 'Surround' },
         { '[', group = 'Prev' },
         { ']', group = 'Next' },
-        { '-', group = 'File explorer' },
         { 'K', group = 'Function Docs' },
       },
     },

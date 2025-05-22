@@ -1,6 +1,7 @@
 return { -- Collection of various small independent plugins/modules
   {
     'echasnovski/mini.nvim',
+    lazy = false,
     config = function()
       -- Better Around/Inside textobjects
       --
@@ -18,7 +19,35 @@ return { -- Collection of various small independent plugins/modules
       require('mini.surround').setup()
       -- Automatically add or remove pairs of characters
       require('mini.pairs').setup()
+      -- Use brackets as motions
+      require('mini.bracketed').setup()
+      -- File explorer
+      require('mini.files').setup {
+        lazy = false,
+        opts = {
+          options = {
+            use_as_default_explorer = true,
+          },
+        },
+      }
     end,
+
+    keys = {
+      {
+        '_',
+        function()
+          require('mini.files').open(vim.uv.cwd(), true)
+        end,
+        desc = 'Open files at work dir',
+      },
+      {
+        '-',
+        function()
+          require('mini.files').open(vim.api.nvim_buf_get_name(0), true)
+        end,
+        desc = 'Open files at current buffer',
+      },
+    },
   },
   vim.keymap.set({ 'n', 'x' }, 's', '<Nop>'),
 }
