@@ -24,6 +24,9 @@ return { -- Collection of various small independent plugins/modules
       -- File explorer
       require('mini.files').setup {
         lazy = false,
+        mappings = {
+          close = '<Esc>',
+        },
         opts = {
           options = {
             use_as_default_explorer = true,
