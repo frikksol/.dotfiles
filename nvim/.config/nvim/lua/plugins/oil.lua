@@ -1,0 +1,20 @@
+return { -- Oil file manager
+  'stevearc/oil.nvim',
+  ---@module 'oil'
+  ---@type oil.SetupOpts
+  opts = {
+    view_options = {
+      show_hidden = true,
+    },
+    keymaps = {
+      ['h'] = { 'actions.parent', mode = 'n' },
+      ['l'] = { 'actions.select', mode = 'n' },
+      ['<ESC>'] = { 'actions.close', mode = 'n' },
+    },
+  },
+  dependencies = { { 'echasnovski/mini.icons', opts = {} } },
+  lazy = false,
+  keys = {
+    vim.keymap.set('n', '-', '<CMD>Oil --float<CR>', { desc = 'File Explorer' }),
+  },
+}
