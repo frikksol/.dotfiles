@@ -7,8 +7,8 @@ return { -- Oil file manager
       show_hidden = true,
     },
     keymaps = {
-      ['h'] = { 'actions.parent', mode = 'n' },
-      ['l'] = { 'actions.select', mode = 'n' },
+      ['H'] = { 'actions.parent', mode = 'n' },
+      ['L'] = { 'actions.select', mode = 'n' },
       ['<ESC>'] = { 'actions.close', mode = 'n' },
     },
   },
