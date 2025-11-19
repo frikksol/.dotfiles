@@ -13,7 +13,7 @@ brew install 1password-cli
 
 # GUI Applications
 brew install --cask nikitabobko/tap/aerospace ghostty
-brew install caffeine alt-tab linearmouse raycast vanilla
+brew install caffeine alt-tab linearmouse raycast hiddenbar
 
 brew install spotify vlc
 
